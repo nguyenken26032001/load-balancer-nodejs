@@ -1,0 +1,26 @@
+{
+  "name": "load-balancer",
+  "version": "1.0.0",
+  "description": "implement system design load balancer",
+  "main": "api-gateway.js",
+  "scripts": {
+    "dev": "nodemon api-gateway.js",
+    "load-balancer": "nodemon load-balancer.js",
+    "server1": "nodemon node1/server-3001.js",
+    "server2": "nodemon node2/server-3002.js",
+    "server3": "nodemon node3/server-3003.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "load-balancer"
+  ],
+  "author": "nguyen ken",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.3"
+  }
+}
